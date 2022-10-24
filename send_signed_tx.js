@@ -38,3 +38,5 @@ const main = async () => {
     console.log('\nSender balance after: ' + ethers.utils.formatEther(senderBalanceAfter))
     console.log('\nSender balance after: ' + ethers.utils.formatEther(receiverBalanceAfter))
 }
+
+main()
