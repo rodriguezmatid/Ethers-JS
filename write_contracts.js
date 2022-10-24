@@ -23,6 +23,10 @@ const address = ''
 const contract = new ethers.Contract(address, ERC20_ABI, provider)
 
 const main = async () => {
+    const balance = await contract.balaceOf(account1)
+
+    console.log('\nReading from: ' + address)
+    console.log('\nBalance of sender: ' + balance)
 
     const contractWithWallet = contract.connect(wallet)
     const tx = await contractWithWallet.transfer(account2, balance)
